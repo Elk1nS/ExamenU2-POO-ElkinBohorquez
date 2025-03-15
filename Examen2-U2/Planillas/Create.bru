@@ -5,7 +5,17 @@ meta {
 }
 
 post {
-  url: 
-  body: none
+  url: {{PATH}}/planillas
+  body: json
   auth: none
+}
+
+body:json {
+  {
+      "id": "123e4567-e89b-12d3-a456-426614174000",
+      "periodo": "Agosto 2025",
+      "dateCreation": "2025-08-15T03 : 31:10.735Z",
+      "datePay": "2025-12-15T03 : 31:10.735Z",
+      "state": "Pendiente"
+    }
 }

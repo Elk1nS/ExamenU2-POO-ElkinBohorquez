@@ -5,7 +5,21 @@ meta {
 }
 
 post {
-  url: 
-  body: none
+  url: {{PATH}}/empleados
+  body: json
   auth: none
+}
+
+body:json {
+  {
+      "id": "123e4567-e89b-12d3-a456-426614174000",
+      "firstName": "Saul",
+      "lastName": "Arita",
+      "document": "0422200200135",
+      "dateContratation": "2025-03-15T02:36:00.675Z",
+      "departament": "Produccion",
+      "workStation": "Empaque",
+      "baseSalary": "15000",
+      "activo": false
+    }
 }

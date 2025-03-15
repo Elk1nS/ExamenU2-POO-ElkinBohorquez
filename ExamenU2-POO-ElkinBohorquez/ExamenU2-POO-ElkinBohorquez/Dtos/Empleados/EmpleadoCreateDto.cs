@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ExamenU2_POO_ElkinBohorquez.Dtos.Empleados
 {
@@ -17,7 +18,21 @@ namespace ExamenU2_POO_ElkinBohorquez.Dtos.Empleados
         [Display(Name = "Documento Nacional de Identidad")]
         [Required(ErrorMessage = "El campo {0} es requerido")]
         [StringLength(13, MinimumLength = 13, ErrorMessage = "El campo {0} debe tener un minimo de de {2} y un maximo de {1} caracteres")]
-        public string DNI { get; set; }
+        public string Document { get; set; }
+
+        public DateTime DateContratation { get; set; }
+
+        [Column("departament")]
+        public string Departament { get; set; }
+
+        [Column("work_station")]
+        public string WorkStation { get; set; }
+
+        [Column("base_salary")]
+        public decimal BaseSalary { get; set; }
+
+        [Column("activo")]
+        public bool Activo { get; set; }
 
     }
 }

@@ -5,7 +5,22 @@ meta {
 }
 
 post {
-  url: 
-  body: none
+  url: {{PATH}}/detalleplanillas
+  body: json
   auth: none
+}
+
+body:json {
+  {
+      "id": "123e4567-e89b-12d3-a456-426614174000",
+      "planillaId": 1,
+      "empleadoId": 1,
+      "baseSalary": 1,
+      "horasExtras": 1,
+      "montoHorasExtra": 1,
+      "bonificaciones": 1,
+      "deducciones": 1,
+      "salarioNeto": 1,
+      "comentarios": null
+    }
 }

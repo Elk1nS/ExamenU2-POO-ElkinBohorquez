@@ -3,6 +3,7 @@ using ExamenU2_POO_ElkinBohorquez.Helpers;
 using ExamenU2_POO_ElkinBohorquez.Services;
 using ExamenU2_POO_ElkinBohorquez.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +28,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.MapScalarApiReference();
 }
 
 app.UseHttpsRedirection();
